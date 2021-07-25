@@ -1,0 +1,5 @@
+Verde Oscuro: #4EA032
+Verde Claro: #BFD989
+Negro: #0E0F07
+Mostaza: #F2921D
+Naranja: #D95A11

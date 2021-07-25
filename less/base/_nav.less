@@ -1,0 +1,33 @@
+nav{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	.margenInterno(.5em);
+	ul.nav{
+		display: grid;
+		grid-auto-flow:column;
+		grid-gap:1.5em;
+		list-style: none;
+	}
+	li{
+		a{
+			color:@grisOscuro;
+			display: block;
+			text-decoration: none;
+			.negrita(bold);
+			text-transform:uppercase;
+			&:hover{
+				color:@celeste;
+				transition: .5s all;
+			}
+		}
+	}
+}
+.logo{
+	//
+	text-transform: uppercase;
+	.margenIzquierda(.5em);
+	h1{
+		.negrita(900);
+	}
+}

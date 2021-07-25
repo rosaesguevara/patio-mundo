@@ -1,0 +1,72 @@
+.normal{
+	.negrita(normal);
+}
+img{
+	.anchoImg(300px,100%);
+	transition: .5s all;
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}
+
+section.banner{
+	.fondoImagen(@banner,25em);
+	text-align: center;
+	color: @grisSuave;
+	.margenInterno(3em);
+	.text{
+		font-size: 4em;
+		.negrita(900);
+	}
+	p{
+		display: block;
+		margin: -0.7em auto;
+	}
+//falta
+}
+section.week{
+	.ancho(6em);
+	text-align: center;
+	margin: 0 auto;
+	h2{
+		font-size: 2.5em;
+	}
+	.margenAbajo(3em);
+}
+.items, .itemsFour{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	article{
+		background:@grisSuave2;
+		.margen(1em);
+		.imgItems{
+			float: left;
+			.anchoImg(160px,100%);
+			.margen(.8em)
+		}
+		.fo{
+			color: @grisOscuro;
+			.negrita(bold);
+			.margenInterno(.5em);
+		}
+	}
+}
+.itemsFour{
+	grid-template-columns: auto auto auto auto;
+
+}
+.back{
+	article{
+		background: transparent;
+	}
+}
+.bottom{
+	background:@grisOscuro;
+	color: @grisSuave2;
+	.margenInterno(.5em);
+	text-align: center;
+	i{
+		.margenDerecha(.3em);
+	}
+}

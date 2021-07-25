@@ -1,0 +1,135 @@
+body {
+  font-family: 'Helvetica', 'Arial';
+  margin: 0;
+  padding: 0;
+}
+/*
+sintaxis sass
+@mixin margenInterno($parametro)*/
+header .top {
+  background: #333333;
+  color: #e4e5e7;
+  padding: 0.5em;
+  text-align: right;
+}
+header .top i {
+  margin-right: 0.3em;
+}
+.normal {
+  font-weight: normal;
+}
+img {
+  width: 300px;
+  max-width: 100%;
+  transition: .5s all;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+section.banner {
+  background: rgba(0, 0, 0, 0.6) url('../img/slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 25em;
+  text-align: center;
+  color: #e4e5e7;
+  padding: 3em;
+}
+section.banner .text {
+  font-size: 4em;
+  font-weight: 900;
+}
+section.banner p {
+  display: block;
+  margin: -0.7em auto;
+}
+section.week {
+  width: 6em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+section.week h2 {
+  font-size: 2.5em;
+}
+.items,
+.itemsFour {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.items article,
+.itemsFour article {
+  background: #f3f3f1;
+  margin: 1em;
+}
+.items article .imgItems,
+.itemsFour article .imgItems {
+  float: left;
+  width: 160px;
+  max-width: 100%;
+  margin: 0.8em;
+}
+.items article .fo,
+.itemsFour article .fo {
+  color: #333333;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.itemsFour {
+  grid-template-columns: auto auto auto auto;
+}
+.back article {
+  background: transparent;
+}
+.bottom {
+  background: #333333;
+  color: #f3f3f1;
+  padding: 0.5em;
+  text-align: center;
+}
+.bottom i {
+  margin-right: 0.3em;
+}
+.btn {
+  background: #00c8c8;
+  text-align: center;
+  color: #f3f3f1;
+  font-weight: 900;
+  display: inline-block;
+  width: 3em;
+  padding: 1em;
+  margin-top: 1.1em;
+  text-decoration: none;
+}
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+nav ul.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  list-style: none;
+}
+nav li a {
+  color: #333333;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav li a:hover {
+  color: #00c8c8;
+  transition: .5s all;
+}
+.logo {
+  text-transform: uppercase;
+  margin-left: 0.5em;
+}
+.logo h1 {
+  font-weight: 900;
+}

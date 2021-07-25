@@ -1,0 +1,46 @@
+//margenes
+//margen interno
+.margenInterno(@parametro){
+	padding: @parametro;
+
+}
+/*
+sintaxis sass
+@mixin margenInterno($parametro)*/
+.margen(@parametro){
+	margin: @parametro;
+}
+.margenArriba(@parametro){
+	margin-top:@parametro;
+}
+.margenAbajo(@parametro){
+	margin-bottom:@parametro;
+}
+.margenDerecha(@parametro){
+	margin-right:@parametro;
+}
+.margenIzquierda(@parametro){
+	margin-left:@parametro;
+}
+
+//ancho
+.ancho(@parametro){
+width: @parametro;
+}
+.anchoImg(@width,@max-width){
+	width: @width;
+	max-width: @max-width;
+}
+
+//fondo
+.fondoImagen(@banner,@alto){
+	background: rgba(0, 0, 0, .6)@banner;
+	background-size:cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	height: @alto;
+}
+
+.negrita(@parametro){
+	font-weight: @parametro;
+}
