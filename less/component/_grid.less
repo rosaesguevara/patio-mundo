@@ -12,7 +12,31 @@ header {
 		}
 	}
 }
+.container{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	.margen(.7em);
 
+}
+
+.items, .itemsFour{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	article{
+		background:@grisSuave2;
+		.margen(1em);
+		.imgItems{
+			float: left;
+			.anchoImg(160px,100%);
+			.margen(.8em)
+		}
+		.fo{
+			color: @grisOscuro;
+			.negrita(bold);
+			.margenInterno(.5em);
+		}
+	}
+}
 section.banner{
 	.fondoImagen(@banner,25em);
 	text-align: center;
@@ -37,6 +61,7 @@ section.week{
 	}
 	.margenAbajo(3em);
 }
+
 .items, .itemsFour{
 	display: grid;
 	grid-template-columns: auto auto auto;

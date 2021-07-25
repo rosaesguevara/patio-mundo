@@ -28,6 +28,34 @@ header .top:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0.7em;
+}
+.items,
+.itemsFour {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.items article,
+.itemsFour article {
+  background: #f3f3f1;
+  margin: 1em;
+}
+.items article .imgItems,
+.itemsFour article .imgItems {
+  float: left;
+  width: 160px;
+  max-width: 100%;
+  margin: 0.8em;
+}
+.items article .fo,
+.itemsFour article .fo {
+  color: #333333;
+  font-weight: bold;
+  padding: 0.5em;
+}
 section.banner {
   background: rgba(0, 0, 0, 0.6) url('../img/slide.jpg');
   background-size: cover;
