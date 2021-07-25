@@ -6,24 +6,25 @@ body {
 /*
 sintaxis sass
 @mixin margenInterno($parametro)*/
-header .top {
-  background: #333333;
-  color: #e4e5e7;
-  padding: 0.5em;
-  text-align: right;
+header {
+  background: #bfd989;
 }
-header .top i {
-  margin-right: 0.3em;
+header .top {
+  padding: 0.8em;
+}
+header .top img {
+  margin-left: 0.3em;
+  text-align: left;
 }
 .normal {
   font-weight: normal;
 }
-img {
+header .top {
   width: 300px;
   max-width: 100%;
   transition: .5s all;
 }
-img:hover {
+header .top:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -107,6 +108,7 @@ nav {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+  background: #ffffff;
   padding: 0.5em;
 }
 nav ul.nav {
@@ -116,20 +118,13 @@ nav ul.nav {
   list-style: none;
 }
 nav li a {
-  color: #333333;
+  color: #d95a11;
   display: block;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
 }
 nav li a:hover {
-  color: #00c8c8;
+  color: #bfd989;
   transition: .5s all;
-}
-.logo {
-  text-transform: uppercase;
-  margin-left: 0.5em;
-}
-.logo h1 {
-  font-weight: 900;
 }

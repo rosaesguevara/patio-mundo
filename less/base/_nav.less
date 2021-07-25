@@ -2,6 +2,7 @@ nav{
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: space-between;
+	background: @blanco;
 	.margenInterno(.5em);
 	ul.nav{
 		display: grid;
@@ -11,23 +12,15 @@ nav{
 	}
 	li{
 		a{
-			color:@grisOscuro;
+			color:@naranja;
 			display: block;
 			text-decoration: none;
 			.negrita(bold);
 			text-transform:uppercase;
 			&:hover{
-				color:@celeste;
+				color:@verdeSuave;
 				transition: .5s all;
 			}
 		}
-	}
-}
-.logo{
-	//
-	text-transform: uppercase;
-	.margenIzquierda(.5em);
-	h1{
-		.negrita(900);
 	}
 }
