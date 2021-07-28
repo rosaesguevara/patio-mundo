@@ -5,6 +5,7 @@
 header {
 	.top{
 	.anchoImg(300px,100%);
+	.margenInterno(1em);
 	transition: .5s all;
 	&:hover{
 			cursor: pointer;
@@ -15,10 +16,25 @@ header {
 .container{
 	display: grid;
 	grid-template-columns: 70% 30%;
-	.margen(.7em);
+	.margen(1em);
 
 }
-
+section{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	.margen(1em);
+	.margenInterno(0.5em);
+	article{
+		.card{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		img{
+			
+			.anchoImg(250px,100%);
+			}
+		}
+	}
+}/*
 .items, .itemsFour{
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -97,4 +113,4 @@ section.week{
 	i{
 		.margenDerecha(.3em);
 	}
-}
+}*/ 

@@ -2,6 +2,7 @@ body {
   font-family: 'Helvetica', 'Arial';
   margin: 0;
   padding: 0;
+  background-image: url("img/fondo_mundo_patio.jpg");
 }
 /*
 sintaxis sass
@@ -22,6 +23,7 @@ header .top img {
 header .top {
   width: 300px;
   max-width: 100%;
+  padding: 1em;
   transition: .5s all;
 }
 header .top:hover {
@@ -31,96 +33,102 @@ header .top:hover {
 .container {
   display: grid;
   grid-template-columns: 70% 30%;
-  margin: 0.7em;
-}
-.items,
-.itemsFour {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.items article,
-.itemsFour article {
-  background: #f3f3f1;
   margin: 1em;
 }
-.items article .imgItems,
-.itemsFour article .imgItems {
-  float: left;
-  width: 160px;
-  max-width: 100%;
-  margin: 0.8em;
-}
-.items article .fo,
-.itemsFour article .fo {
-  color: #333333;
-  font-weight: bold;
-  padding: 0.5em;
-}
-section.banner {
-  background: rgba(0, 0, 0, 0.6) url('../img/slide.jpg');
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
-  height: 25em;
-  text-align: center;
-  color: #e4e5e7;
-  padding: 3em;
-}
-section.banner .text {
-  font-size: 4em;
-  font-weight: 900;
-}
-section.banner p {
-  display: block;
-  margin: -0.7em auto;
-}
-section.week {
-  width: 6em;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 3em;
-}
-section.week h2 {
-  font-size: 2.5em;
-}
-.items,
-.itemsFour {
+section {
   display: grid;
-  grid-template-columns: auto auto auto;
-}
-.items article,
-.itemsFour article {
-  background: #f3f3f1;
+  grid-template-columns: 50% 50%;
   margin: 1em;
+  padding: 0.5em;
 }
-.items article .imgItems,
-.itemsFour article .imgItems {
-  float: left;
-  width: 160px;
+section article .card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section article .card img {
+  width: 250px;
   max-width: 100%;
-  margin: 0.8em;
 }
-.items article .fo,
-.itemsFour article .fo {
-  color: #333333;
-  font-weight: bold;
-  padding: 0.5em;
+/*
+.items, .itemsFour{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	article{
+		background:@grisSuave2;
+		.margen(1em);
+		.imgItems{
+			float: left;
+			.anchoImg(160px,100%);
+			.margen(.8em)
+		}
+		.fo{
+			color: @grisOscuro;
+			.negrita(bold);
+			.margenInterno(.5em);
+		}
+	}
 }
-.itemsFour {
-  grid-template-columns: auto auto auto auto;
+section.banner{
+	.fondoImagen(@banner,25em);
+	text-align: center;
+	color: @grisSuave;
+	.margenInterno(3em);
+	.text{
+		font-size: 4em;
+		.negrita(900);
+	}
+	p{
+		display: block;
+		margin: -0.7em auto;
+	}
+//falta
 }
-.back article {
-  background: transparent;
+section.week{
+	.ancho(6em);
+	text-align: center;
+	margin: 0 auto;
+	h2{
+		font-size: 2.5em;
+	}
+	.margenAbajo(3em);
 }
-.bottom {
-  background: #333333;
-  color: #f3f3f1;
-  padding: 0.5em;
-  text-align: center;
+
+.items, .itemsFour{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	article{
+		background:@grisSuave2;
+		.margen(1em);
+		.imgItems{
+			float: left;
+			.anchoImg(160px,100%);
+			.margen(.8em)
+		}
+		.fo{
+			color: @grisOscuro;
+			.negrita(bold);
+			.margenInterno(.5em);
+		}
+	}
 }
-.bottom i {
-  margin-right: 0.3em;
+.itemsFour{
+	grid-template-columns: auto auto auto auto;
+
 }
+.back{
+	article{
+		background: transparent;
+	}
+}
+.bottom{
+	background:@grisOscuro;
+	color: @grisSuave2;
+	.margenInterno(.5em);
+	text-align: center;
+	i{
+		.margenDerecha(.3em);
+	}
+}*/
 .btn {
   background: #00c8c8;
   text-align: center;
