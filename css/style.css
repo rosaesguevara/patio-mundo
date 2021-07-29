@@ -20,6 +20,38 @@ header .top img {
 .normal {
   font-weight: normal;
 }
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header" "carrousel carrousel aside" "jardineria decoracion aside" "tecnologia muebles aside" "footer footer footer";
+  margin: 0;
+}
+.container .header {
+  grid-area: header;
+}
+.container .carrousel {
+  grid-area: carrousel;
+}
+.container .aside {
+  grid-area: aside ;
+}
+.container .jardineria {
+  grid-area: jardineria;
+}
+.container .decoracion {
+  grid-area: decoracion;
+}
+.container .tecnologia {
+  grid-area: tecnologia;
+}
+.container .muebles {
+  grid-area: muebles;
+}
+.container .footer {
+  grid-area: footer;
+}
 header .top {
   width: 300px;
   max-width: 100%;
@@ -30,25 +62,26 @@ header .top:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.container {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  margin: 1em;
+footer i:hover {
+  cursor: pointer;
+  transform: scale(1.3);
 }
-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 1em;
-  padding: 0.5em;
-}
-section article .card {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-section article .card img {
-  width: 250px;
-  max-width: 100%;
-}
+/*section{
+	/*display: grid;
+	grid-template-columns: 50% 50%;
+	.margen(1em);
+	.margenInterno(0.5em);
+	article{
+		.card{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		img{
+			
+			.anchoImg(250px,100%);
+			}
+		}
+	}
+}*/
 /*
 .items, .itemsFour{
 	display: grid;
@@ -163,4 +196,13 @@ nav li a {
 nav li a:hover {
   color: #bfd989;
   transition: .5s all;
+}
+footer {
+  background: #bfd989;
+  color: #4ea032;
+  padding: 0.7em;
+  text-align: center;
+}
+footer i {
+  margin-right: 1em;
 }
