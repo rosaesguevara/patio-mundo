@@ -1,2 +1,2 @@
 # patio-mundo
-Prueba de proyecto de tranbajo en grupo 
+Prueba de proyecto de trabajo en grupo 
