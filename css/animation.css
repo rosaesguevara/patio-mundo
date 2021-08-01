@@ -1,0 +1,33 @@
+/*
+Efecto zoom de 0 a 
+*/
+.navbar-brand img{
+  width: 30px;
+  animation-duration: 1s;
+  animation-name: zoomIn;
+  animation-duration: alternate;
+}
+.img-opacity{
+  animation-duration: 0.5s;
+  animation-name: opacityIn;
+  opacity: .7;
+}
+
+@keyframes zoomIn{
+  /*este keyframes es para ocntrolar la animación*/
+  from{
+    width: 0px;
+  }
+  to{
+    width: 64px;
+  }
+}
+@keyframes opacityIn{
+  /*este keyframes es para ocntrolar la animación*/
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: .7;
+  }
+}
